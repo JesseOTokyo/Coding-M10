@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    background-color: gray; /* Ensures background is visible */
+}
+
+.navbar a { /* links on the nav bar*/
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+    padding: 0px 20px;
+}
+
+.navbar a:hover { /* the underline on the links */
+    border-bottom: 2px solid #000;
+}
+
+/* ^^^^^^nav bar*/
+
+.hero{
+    height: 650px;
+    background-image: url(coffeepic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.backgroundcolor {
+    background-color: #000;
+}
+
+.herocontent{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero img {
+    height: auto;
+    width: 620px;
+    
+}
+
+.hero p {
+    margin-left: 70px;
+    width: 422px;
+    color: #F5F5F5;
+    font-size: larger;
+}
+
+  /* ^^^^^^Hero*/
+  
+  .head1 {
+    display: flex;
+    font-size: 40px;
+    margin:auto;
+    max-width: 247px;
+    padding: 30px;
+ }
+ 
+  .card1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Image styles */
+.cardimg1 {
+    width: 35%;
+    height: auto;
+    
+}
+
+/* Text box styles */
+.cardparagraph1 {
+    background-color: #F5F5F5;
+    padding: 20px;
+    width: 50%; /* Set width to control size of the text box */
+    max-width: 400px; /* Ensure it doesn't get too large on bigger screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px; /* Adjust margin to suit your layout */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+ 
+/*Card1^^^^^^^^^^^^^^^*/
+
+
+.brown {
+    background-color: #59331D;
+}
+
+.head2  {
+    display: flex;
+    font-size: 40px;
+    margin:auto;
+    max-width: 302px;
+    padding: 30px
+ }
+ 
+  .card2 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Image styles */
+.cardimg2 {
+    width: 35%;
+    height: auto;
+    margin-left: 40px;
+}
+
+/* Text box styles */
+.cardparagraph2 {
+    background-color: #F5F5F5;
+    padding: 20px;
+    width: 50%; /* Set width to control size of the text box */
+    max-width: 400px; /* Ensure it doesn't get too large on bigger screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+ 
+/*Card2^^^^^^^^^^^^^^^*/
+
+.buttonsection{
+    background-color: #59331D;
+    display: flex;
+}
+
+.cta2 {
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 800px;
+    background-color: #b9b9b9; /* Primary button color (green) */
+    color: white; /* Button text color */
+    padding: 12px 24px; /* Padding around the text */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transitions */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.cta2:hover {
+    background-color: #3b3b3b; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.cta2:active {
+    background-color: #000000; /* Even darker green when clicked */
+    transform: scale(0.98); /* Slightly smaller when clicked */
+}
+
+/*Button^^^^^^^^^^^^^^^*/
+
+
+
+
+
+
+footer {
+    background-color: #131D26;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ 
+ 
+ 
+ 
+ 
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero img {
+        width: 500px;
+    }
+
+    .hero p {
+        font-size: medium;
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .cardimg1, .cardimg2 {
+        width: 45%;
+    }
+
+    .cardparagraph1, .cardparagraph2 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .hero {
+        height: 400px;
+        background-size: contain;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 80%;
+    }
+
+    .hero p {
+        margin: 0;
+        width: 100%;
+        font-size: large;
+    }
+
+    .card1, .card2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardimg1, .cardimg2 {
+        width: 100%;
+    }
+
+    .cardparagraph1, .cardparagraph2 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero img {
+        width: 60%;
+    }
+
+    .cardimg1, .cardimg2 {
+        width: 90%;
+    }
+
+    .cardparagraph1, .cardparagraph2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cta2 {
+        width: 100%;
+        padding: 10px;
+        font-size: larger;
+    }
+}
