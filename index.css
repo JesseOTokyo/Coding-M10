@@ -203,9 +203,6 @@ ul {
 
 
 
-
-
-
 footer {
     background-color: #131D26;
     color: white;
@@ -218,9 +215,93 @@ footer a {
     color: inherit;
 }
 
+ /*HOME PAGE INDEX.HTML ^^^^^^^^^^^^^^^*/
  
+ .hero2{
+    height: 500px;
+    background-image: url(https://assets.codepen.io/6306176/gulp-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.herocontent2{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero2 h1 {
+    color: #F5F5F5;
+    margin-left: 70px;
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+
+.hero2 p {
+    margin-left: 70px;
+    width: 422px;
+    color: #F5F5F5;
+    font-size: larger;
+}
+
+/*Hero 2^^^^^^^^^^^^^^^*/
  
- 
+  .card1producthtml{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Image styles */
+.cardimg1producthtml{
+    width: 25%;
+    height: auto;
+    
+}
+
+/* Text box styles */
+.cardparagraph1producthtml{
+    background-color: #F5F5F5;
+    padding: 20px;
+    width: 50%; /* Set width to control size of the text box */
+    max-width: 400px; /* Ensure it doesn't get too large on bigger screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px; /* Adjust margin to suit your layout */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/*Card1Products.html^^^^^^^^^^^^^^^*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
 /* Responsive Media Queries */
