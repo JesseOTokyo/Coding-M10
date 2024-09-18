@@ -54,6 +54,30 @@ ul {
     padding: 20px;
 }
 
+.herocontent button {
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 800px;
+    background-color: #b9b9b9; /* Primary button color (green) */
+    color: white; /* Button text color */
+    padding: 12px 24px; /* Padding around the text */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transitions */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.herocontent button:hover {
+    background-color: #3b3b3b; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.herocontent button:active {
+    background-color: #000000; /* Even darker green when clicked */
+    transform: scale(0.98); /* Slightly smaller when clicked */
+}
+
 .hero img {
     height: auto;
     width: 620px;
